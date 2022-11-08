@@ -21,7 +21,7 @@ class ProductService extends AbstractProductService
             (string) $request->photograph,
             (float) $this->removeComma($request->price)
         );
-        dd($this->product);
+        dd($this->repository->all());
     }
 
     private function removeComma($price): float
