@@ -4,7 +4,8 @@ namespace App\Domain\Product\Repository;
 
 interface ProductRepositoryInterface
 {
-    public function create(): void;
+    public function create($value): void;
 
+    public function find($id);
     public function all();
 }

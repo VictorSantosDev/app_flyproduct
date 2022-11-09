@@ -28,6 +28,7 @@ class ProductRequest extends FormRequest
     public function rules()
     {
         return [
+            'id' => 'sometimes|required',
             'type' => ['required',
                         Rule::in([
                             TypeProductEnum::ELECTRONICS,

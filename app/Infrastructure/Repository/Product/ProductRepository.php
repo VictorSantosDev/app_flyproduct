@@ -15,9 +15,14 @@ class ProductRepository implements ProductRepositoryInterface
         $this->model = $product;
     }
 
-    public function create(): void
+    public function create($value): void
     {
+        $this->model->create($value);
+    }
 
+    public function find($id)
+    {
+        return $this->model->find($id);
     }
 
     public function all()

@@ -8,7 +8,7 @@ use App\Infrastructure\Repository\Product\ProductRepository;
 
 abstract class AbstractProductService
 {
-    /** @var  */
+    /** @var ProductRepository */
     protected $repository;
 
     public function __construct(ProductRepository $productRepository)

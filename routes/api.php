@@ -21,4 +21,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::prefix('product')->group(function () {
     Route::post('/store-product', [ProductController::class, 'store'])->name('store.product');
+    Route::post('/update-product', [ProductController::class, 'update'])->name('update.product');
 });
